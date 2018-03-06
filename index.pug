@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+    script(src='res/js/howler.js')
+    script(src='res/js/fontawesome-all.js')
+    //script(src='js/funcs.js')
+    link(rel='stylesheet' type='text/css' href='css/main.css')
+    link(rel='stylesheet' type='text/css' href='css/index.css')
+    script.
+      var openNav = function () {document.getElementById('navigation').style.width = '425px'; $("#openbtn").fadeOut(200, console.log('Menu Button Hidden'));};
+      var closeNav = function () {document.getElementById('navigation').style.width = '100px'; $("#openbtn").fadeIn(200, console.log('Menu Button Shown'));};
+  body
+    div(class='navigation' id='navigation')
+      a(href='javascript:void(0)' id='openbtn' class='fas fa-bars' onclick='openNav()') 
+      a(href='javascript:void(0)' id='closebtn' class='fas fa-times' onclick='closeNav()') 
+      br
+      br
+      br
+      a(href='#section1') 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 1
+      br
+      a(href='#section2') 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2
+      div(class='links' id='links')
+        span(onclick='window.location.assign("https://www.github.com/pwnzlps"' class='tooltip')
+          span(id='link' class='fas fa-github')
+          span(class='tooltipText') My Github. You'll find all my (mostly unfinished) projects here.
+        span(onclick='window.location.assign("https://www.youtube.com/pwnzlps")' class='tooltip')
+          span(id='link' class='fas fa-youtube')
+          span(class='tooltipText') My YouTube channel. I upload my videos here, and then (at some point), will eventually embed them here.
+        span(onclick='window.location.assign("https://www.youtube.com/pwnzlps")' class='tooltip')
+          span(id='link' class='fas fa-twitter')
+          span(class='tooltipText') My Twitter. If something goes wrong, you'll get an update from me here.
+        span(onclick='window.location.assign("https://www.twitch.tv/pwnzlps")' class='tooltip')
+          span(id='link' class='fas fa-twitch')
+          span(class='tooltipText') My Twitch.TV channel. I livestream here, sometimes.
+        span(onclick='window.location.assign("https://www.github.com/PwnzLPs/Personal-Website")' class='tooltip')
+          span(id='link' class='fas fa-github-alt')
+          span(class='tooltipText') View the code for this website on GitHub
+
+    div(class='wrapper')
+      div(class='content')
+        a(name='section1')
+        // content goes in here
+        p Coming Soon...
+
+      div(class='section2')
+        a(name='section2')
+        p Still Coming Soon...
